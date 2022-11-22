@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="571ff3a863a64063ac3f3c88d5f32854" Name="Diagram1">
+        <EntityTypeShape EntityType="MdlHackathon.ADMINISTRATEUR" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.EQUIPE" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.HACKATHON" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.INSCRIRE" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.MEMBRE" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.ORGANISATEUR" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MdlHackathon.TOKEN" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="MdlHackathon.inscrire_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="MdlHackathon.membre_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="MdlHackathon.token_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="MdlHackathon.hackathon_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="MdlHackathon.inscrire_ibfk_1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MdlHackathon.ARCHIVAGE" Width="1.5" PointX="5.375" PointY="5.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
