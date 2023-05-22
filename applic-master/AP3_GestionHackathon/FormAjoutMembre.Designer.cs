@@ -89,6 +89,7 @@
             this.txtIndexEquipe.Name = "txtIndexEquipe";
             this.txtIndexEquipe.Size = new System.Drawing.Size(47, 20);
             this.txtIndexEquipe.TabIndex = 5;
+            this.txtIndexEquipe.Visible = false;
             // 
             // FormAjoutMembre
             // 

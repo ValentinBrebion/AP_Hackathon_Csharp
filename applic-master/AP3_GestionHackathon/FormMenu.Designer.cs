@@ -44,6 +44,7 @@
             this.dECONNEXIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qUITTERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.LBLBienvenue = new System.Windows.Forms.Label();
             this.panelconnexion = new System.Windows.Forms.Panel();
             this.btnconn = new System.Windows.Forms.Button();
             this.txtmdp = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@
             this.lbllog = new System.Windows.Forms.Label();
             this.lblconnexion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LBLBienvenue = new System.Windows.Forms.Label();
             this.menuStripPrincipal.SuspendLayout();
             this.panelPrincipal.SuspendLayout();
             this.panelconnexion.SuspendLayout();
@@ -184,6 +184,18 @@
             this.panelPrincipal.Size = new System.Drawing.Size(800, 423);
             this.panelPrincipal.TabIndex = 1;
             // 
+            // LBLBienvenue
+            // 
+            this.LBLBienvenue.AutoSize = true;
+            this.LBLBienvenue.BackColor = System.Drawing.Color.Transparent;
+            this.LBLBienvenue.Font = new System.Drawing.Font("MS PGothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLBienvenue.Location = new System.Drawing.Point(200, 32);
+            this.LBLBienvenue.Name = "LBLBienvenue";
+            this.LBLBienvenue.Size = new System.Drawing.Size(354, 21);
+            this.LBLBienvenue.TabIndex = 4;
+            this.LBLBienvenue.Text = "BIENVENUE SUR HACKAT\' INNOV !";
+            this.LBLBienvenue.Visible = false;
+            // 
             // panelconnexion
             // 
             this.panelconnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -263,18 +275,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(785, 420);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // LBLBienvenue
-            // 
-            this.LBLBienvenue.AutoSize = true;
-            this.LBLBienvenue.BackColor = System.Drawing.Color.Transparent;
-            this.LBLBienvenue.Font = new System.Drawing.Font("MS PGothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLBienvenue.Location = new System.Drawing.Point(200, 32);
-            this.LBLBienvenue.Name = "LBLBienvenue";
-            this.LBLBienvenue.Size = new System.Drawing.Size(354, 21);
-            this.LBLBienvenue.TabIndex = 4;
-            this.LBLBienvenue.Text = "BIENVENUE SUR HACKAT\' INNOV !";
-            this.LBLBienvenue.Visible = false;
             // 
             // FormMenu
             // 

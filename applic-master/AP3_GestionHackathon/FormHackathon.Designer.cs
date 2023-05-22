@@ -40,11 +40,14 @@
             this.dgvEquipes = new System.Windows.Forms.DataGridView();
             this.btnarchiver = new System.Windows.Forms.Button();
             this.BTNSUPPR = new System.Windows.Forms.Button();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.désinscrireEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHackathon)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BSHackathon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSEquipe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipes)).BeginInit();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvHackathon
@@ -70,12 +73,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voirLesÉquipesToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(156, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
             // 
             // voirLesÉquipesToolStripMenuItem
             // 
             this.voirLesÉquipesToolStripMenuItem.Name = "voirLesÉquipesToolStripMenuItem";
-            this.voirLesÉquipesToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.voirLesÉquipesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.voirLesÉquipesToolStripMenuItem.Text = "Voir les équipes";
             this.voirLesÉquipesToolStripMenuItem.Click += new System.EventHandler(this.VoirLesÉquipesToolStripMenuItem_Click);
             // 
@@ -154,6 +157,20 @@
             this.BTNSUPPR.UseVisualStyleBackColor = false;
             this.BTNSUPPR.Click += new System.EventHandler(this.BTNSUPPR_Click);
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.désinscrireEquipeToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(171, 26);
+            // 
+            // désinscrireEquipeToolStripMenuItem
+            // 
+            this.désinscrireEquipeToolStripMenuItem.Name = "désinscrireEquipeToolStripMenuItem";
+            this.désinscrireEquipeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.désinscrireEquipeToolStripMenuItem.Text = "Désinscrire Equipe";
+            this.désinscrireEquipeToolStripMenuItem.Click += new System.EventHandler(this.désinscrireEquipeToolStripMenuItem_Click);
+            // 
             // FormHackathon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +193,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BSHackathon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSEquipe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipes)).EndInit();
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +212,8 @@
         private System.Windows.Forms.DataGridView dgvEquipes;
         private System.Windows.Forms.Button btnarchiver;
         private System.Windows.Forms.Button BTNSUPPR;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem désinscrireEquipeToolStripMenuItem;
     }
 }
 

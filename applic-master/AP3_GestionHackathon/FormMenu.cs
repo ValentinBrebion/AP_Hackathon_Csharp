@@ -61,6 +61,7 @@ namespace AP3_GestionHackathon
 
         }
 
+
         private void GestionDesHackathonsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openChildForm(new FormGestionHackathon(EtatGestion.Create)); // Form de Gestion en ajout (create)
@@ -86,7 +87,7 @@ namespace AP3_GestionHackathon
             }
             else
             {
-                if( Modele.ConnexionAdministrateur(txtlog.Text, txtmdp.Text) == true)
+                if( Modele.ConnexionAdministrateur(txtlog.Text, txtmdp.Text))
                 {
                      
                     panelconnexion.Visible = false;

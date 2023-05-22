@@ -558,10 +558,10 @@ namespace AP3_GestionHackathon
             try
             {
                 connreturn = true;
-              
-               
-              
-                adm = maConnexion.ADMINISTRATEUR.First(x => x.nom == login); // objet contenant l'enregistrement administrateur
+
+
+
+                adm = maConnexion.ADMINISTRATEUR.First(x => x.nom == login);// objet contenant l'enregistrement administrateur
 
                 string passwordHash = adm.motpasse; 
                 bool verified = BCrypt.Net.BCrypt.Verify(mdp, passwordHash);
@@ -631,5 +631,46 @@ namespace AP3_GestionHackathon
         {
             return maConnexion.MEMBRE.ToList();
         }
+
+        /*PARTIE RECUPERER EQUIPE*/
+
+        /// <summary>
+        /// Fonction qui retourne l'objet hackathon qui correspond à l'identifiant passé en paramètre 
+        /// </summary>
+        /// <param name="idE">identifiant de l'hackathon</param>
+        /// <returns></returns>
+        public static INSCRIRE RecupererEquipeInscrire(int idE)
+        {
+            INSCRIRE uneInscri = new INSCRIRE();
+            try
+            {
+                uneInscri = maConnexion.INSCRIRE.First(x => x.idequipe == idE);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            return uneInscri;
+        }
+
+        public static bool SupprimerEquipeHack(int idE)
+        {
+            INSCRIRE uneInscri = new INSCRIRE();
+            bool vretour = true;
+            try
+            {
+                uneInscri = RecupererEquipeInscrire(idE);
+                maConnexion.INSCRIRE.Remove(uneInscri);
+                maConnexion.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + " " +
+               ex.InnerException.InnerException.Message);
+                vretour = false;
+            }
+            return vretour;
+        }
+        
     }
 }

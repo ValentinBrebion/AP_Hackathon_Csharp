@@ -135,5 +135,27 @@ namespace AP3_GestionHackathon
             }
             
         }
+
+      
+
+        private void désinscrireEquipeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Type type = BSEquipe.Current.GetType();
+            int idE = (int)type.GetProperty("idequipe").GetValue(BSEquipe.Current, null);
+            DialogResult info = MessageBox.Show("Voulez-vous vraiment désinscrire cette équipe ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (info == DialogResult.Yes)
+            {
+                if (Modele.SupprimerEquipeHack(idE))
+                {
+                    MessageBox.Show("Equipe supprimé du hackathon !");
+                    //rechardata();
+                }
+                else
+                {
+                    MessageBox.Show("Erreur lors de la suppression de l'équipe");
+                }
+            }
+        }
     }
 }
